@@ -49,7 +49,6 @@ input[type=text] {
 }
 #hero-image {
   width: 1140px;
-  max-width: 100%;
 }
 .stripes {
   display: grid;
@@ -163,6 +162,9 @@ footer .right {
   padding: 0 15px;
   text-align: right;
 }
+img {
+  max-width: 100%;
+}
 .columns > * {
   display: inline-block;
   vertical-align: top;
@@ -170,6 +172,23 @@ footer .right {
 #emblem {
   height: 66px;
   width: 64px;
+}
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+}
+.posts h1 {
+  font-size: medium;
+}
+.tag {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.abitur {
+  color: yellowgreen;
+}
+p {
+  margin: 0 0 10px;
 }
 @media only screen and (min-width: 600px) {
 	.grid {
