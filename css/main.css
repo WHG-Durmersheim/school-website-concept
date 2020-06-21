@@ -1,0 +1,152 @@
+html, body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  max-width: 1140px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.428;
+  font-size: 12px;
+  color: lightslategray;
+}
+header {
+  position: relative;
+  height: 131.25px;
+}
+.vertical-centered {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#path,#search {
+  display: block;
+  margin: 4px 0;
+}
+input[type=text] {
+  width: 241.484px;
+  height: 16px;
+  padding: 6px 12px;
+  color: #555555;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+}
+#home {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 262.5px;
+  height: 131.25px;
+  background: url(../images/logo.png) no-repeat;
+  background-size: 262.5px 131.25px;
+}
+#hero-image {
+  width: 1140px;
+}
+.stripes {
+  display: grid;
+  margin: 0 -4px;
+  grid-template-columns: repeat(6,6fr);
+}
+.stripes h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.stripes div {
+  height: 15px;
+  width: calc(100% - 8px);
+  margin: 4px;
+  padding: 0;
+}
+.gold {
+  background: gold;
+}
+.darkorange {
+  background: darkorange;
+}
+.yellowgreen {
+  background: yellowgreen;
+}
+.deepskyblue {
+  background: deepskyblue;
+}
+.cornflowerblue {
+  background: cornflowerblue;
+}
+.lightsteelblue {
+  background: lightsteelblue;
+}
+.second-nav {
+  display: grid;
+  grid-template-columns: repeat(5,5fr);
+}
+.second-nav div {
+  text-align: center;
+}
+.second-nav h2 {
+  margin: 1px;
+}
+.text-center {
+  text-align: center;
+  font-size: 13px;
+  padding: 4px;
+}
+.text-right {
+  text-align: right;
+  font-size: 13px;
+  padding: 4px;
+}
+hr {
+  border-top: 1px solid #ccc;
+}
+footer {
+  font-size: small;
+}
+.grid > div {
+  margin-top: 10px;
+}
+h2 {
+  margin-bottom: 7px;
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.1;
+}
+h3 {
+  margin: 0;
+  font-weight: bold;
+  font-size: inherit;
+}
+footer ul {
+  list-style: none;
+  list-style-image: none;
+  margin: 0 0 7px 0;
+  padding: 0;
+}
+footer a {
+  display: block;
+  padding: 0px 4px;
+  color: inherit;
+  text-decoration: none;
+}
+footer .right {
+  float: right;
+  padding: 0 15px;
+  text-align: right;
+}
+.columns > * {
+  display: inline-block;
+  vertical-align: top;
+}
+#emblem {
+  height: 66px;
+  width: 64px;
+}
+@media only screen and (min-width: 720px) {
+	.grid {
+    display: grid;
+    grid-template-columns: repeat(6,6fr);
+  }
+}
