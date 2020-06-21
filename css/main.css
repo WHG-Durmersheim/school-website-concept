@@ -177,8 +177,15 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 3fr);
 }
+.posts > div {
+  margin-bottom: 1em;
+}
 .posts h1 {
+  margin-top: 0;
   font-size: medium;
+}
+.posts h1 > a {
+  color: inherit;
 }
 .tag {
   text-transform: uppercase;

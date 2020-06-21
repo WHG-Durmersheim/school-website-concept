@@ -2,13 +2,13 @@
 # Main layout file
 ---
 <section class="posts">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:3 %}
     <div>
       <div>{% if post.tag %}<span class="tag {{ post.tag }}">{{ post.tag }}</span>{% else %}<span class="tag">Allgemein</span>{% endif %}</div>
-      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-      <img src="{{ post.imgURL | default '$site.baseurl/images/missingimg.png' | replace: '$site.baseurl', site.baseurl }}" alt="Vorschaubild">
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <img src="{{ post.imgURL | default: '$site.baseurl/images/missingimg.png' | replace: '$site.baseurl', site.baseurl }}" alt="Vorschaubild">
       <p>{{ post.excerpt }}</p>
-      <a href="{{ post.url }}">Weiter</a>
+      <a href="{{ site.baseurl }}{{ post.url }}">Weiter</a>
     </div>
   {% endfor %}
 </section>
