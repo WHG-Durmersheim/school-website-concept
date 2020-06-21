@@ -119,7 +119,9 @@ input[type=text] {
   padding: 4px;
 }
 hr {
-  border-top: 1px solid #ccc;
+  height: 1px;
+  background: #ccc;
+  border: 0;
 }
 footer {
   font-size: small;
