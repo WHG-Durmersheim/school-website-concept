@@ -20,7 +20,7 @@ header {
   top: 50%;
   transform: translateY(-50%);
 }
-#path,#search {
+#path, #search {
   display: block;
   margin: 4px 0;
 }
@@ -44,11 +44,12 @@ input[type=text] {
 }
 #hero-image {
   width: 1140px;
+  max-width: 100%;
 }
 .stripes {
   display: grid;
-  margin: 0 -4px;
-  grid-template-columns: repeat(6,6fr);
+  margin: 0 -8px;
+  grid-template-columns: repeat(6, 6fr);
 }
 .stripes h3 {
   text-align: center;
@@ -78,9 +79,12 @@ input[type=text] {
 .lightsteelblue {
   background: lightsteelblue;
 }
+.nav {
+  display: none;
+}
 .second-nav {
   display: grid;
-  grid-template-columns: repeat(5,5fr);
+  grid-template-columns: repeat(5, 5fr);
 }
 .second-nav div {
   text-align: center;
@@ -144,9 +148,18 @@ footer .right {
   height: 66px;
   width: 64px;
 }
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 600) {
 	.grid {
     display: grid;
-    grid-template-columns: repeat(6,6fr);
+    grid-template-columns: repeat(3, 3fr);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .nav {
+    display: grid;
+  }
+	.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 6fr);
   }
 }
