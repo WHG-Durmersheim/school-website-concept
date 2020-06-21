@@ -90,11 +90,19 @@ input[type=text] {
   display: grid;
   grid-template-columns: repeat(5, 5fr);
 }
-.second-nav div {
+.second-nav-link {
+  display: block;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  color: inherit;
+  text-decoration: none;
 }
-.second-nav h2 {
+.second-nav-link > h2 {
   margin: 1px;
+}
+.second-nav-link > span {
+  display: none;
 }
 .text-center {
   text-align: center;
@@ -111,6 +119,9 @@ hr {
 }
 footer {
   font-size: small;
+}
+a:hover {
+  text-decoration: underline;
 }
 .grid > div {
   margin-top: 10px;
@@ -157,13 +168,22 @@ footer .right {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
   }
+  .second-nav-link > span {
+    display: block;
+  }
 }
 @media only screen and (min-width: 768px) {
   .nav {
     display: grid;
   }
+}
+@media only screen and (min-width: 992px) {
 	.grid {
-    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+  }
+}
+@media only screen and (min-width: 1200px) {
+	.grid {
     grid-template-columns: repeat(6, 6fr);
   }
 }
