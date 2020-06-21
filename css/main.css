@@ -178,7 +178,7 @@ img {
   grid-template-columns: repeat(3, 3fr);
 }
 .posts > div {
-  margin-bottom: 1em;
+  margin: 1em;
 }
 .posts h1 {
   margin-top: 0;
@@ -186,6 +186,9 @@ img {
 }
 .posts h1 > a {
   color: inherit;
+}
+.posts img {
+  width: 100%;
 }
 .tag {
   text-transform: uppercase;
