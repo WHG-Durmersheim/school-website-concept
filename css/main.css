@@ -175,9 +175,10 @@ img {
 }
 .posts {
   display: block;
+  margin: 0 -10px;
 }
 .posts > div {
-  margin: 1em;
+  margin: 10px;
 }
 .posts h1 {
   margin-top: 0;
