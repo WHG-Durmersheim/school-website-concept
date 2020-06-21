@@ -174,8 +174,7 @@ img {
   width: 64px;
 }
 .posts {
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
+  display: block;
 }
 .posts > div {
   margin: 1em;
@@ -208,6 +207,10 @@ p {
   .second-nav-link > span {
     display: block;
   }
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
 }
 @media only screen and (min-width: 768px) {
   .nav {
@@ -217,6 +220,9 @@ p {
 @media only screen and (min-width: 992px) {
 	.grid {
     grid-template-columns: repeat(4, 4fr);
+  }
+  .posts {
+    grid-template-columns: repeat(3, 3fr);
   }
 }
 @media only screen and (min-width: 1200px) {
