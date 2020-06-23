@@ -1,5 +1,5 @@
 ---
-title: Corona-Abi: Ein Abi der besonderen Art -die schriftlichen Prüfungen sind gemeistert
+title: 'Corona-Abi: Ein Abi der besonderen Art -die schriftlichen Prüfungen sind gemeistert'
 tag: abitur
 imgURL: $site.baseurl/images/articles/corona-abi.jpg
 ---
