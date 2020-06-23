@@ -1,7 +1,7 @@
 ---
 ---
 <section class="posts">
-  {% for post in site.posts limit:3 %}
+  {% for post in site.posts %}
     <div>
       <div>{% if post.tag %}<span class="tag {{ post.tag }}">{{ post.tag }}</span>{% else %}<span class="tag">Allgemein</span>{% endif %}</div>
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -11,5 +11,3 @@
     </div>
   {% endfor %}
 </section>
-<hr>
-<a class="text-center" href="{{ site.baseurl }}/content/all-articles">Alle Artikel Anzeigen</a>
