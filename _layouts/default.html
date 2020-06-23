@@ -37,7 +37,28 @@
       <div class="cornflowerblue"></div>
       <div class="lightsteelblue"></div>
     </section>
-    <img id="hero-image" alt="Die Schule" src="{{ site.baseurl }}/images/hero-image.jpg">
+
+    <div class="slideshow-container">
+      <img class="slide fade active" alt="Theater" src="{{ site.baseurl }}/images/carousel-1.jpg">
+      <img class="slide fade" alt="Big Band" src="{{ site.baseurl }}/images/carousel-2.jpg">
+      <img class="slide fade" alt="Erklärvideoauswertung" src="{{ site.baseurl }}/images/carousel-3.jpg">
+      <img class="slide fade" alt="Wilhelm Hausenstein Büste" src="{{ site.baseurl }}/images/carousel-4.jpg">
+      <img class="slide fade" alt="WHG Spendenlauf" src="{{ site.baseurl }}/images/hero-image.jpg">
+      <img class="slide fade" alt="Wilhelm-Hausenstein Gymnasium" src="{{ site.baseurl }}/images/carousel-6.jpg">
+      <img class="slide fade" alt="Mischpult" src="{{ site.baseurl }}/images/carousel-7.jpg">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+      </div>
+    </div>
+
     <section class="stripes">
       <div class="gold"></div>
       <div class="darkorange"></div>
@@ -232,5 +253,6 @@
         <span>&copy; Wilhelm-Hausenstein Gymnasium 2017-2020</span>
       </div>
     </footer>
+    <script src="{{ site.baseurl }}/js/slideshow.js"></script>
   </body>
 </html>
