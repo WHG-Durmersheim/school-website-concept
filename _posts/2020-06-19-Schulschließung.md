@@ -1,4 +1,5 @@
 ---
+title: Schulschließung - Aktuelle Meldungen
 tag: schulleitung
 imgURL: $site.baseurl/images/articles/corona.jpg
 ---
@@ -17,5 +18,3 @@ Bleiben Sie gesund, zuversichtlich und besonnen!
 Thomas Dornblüth
 
 Schulleiter
-
-<a href="">Schulleitung</a>
