@@ -194,6 +194,9 @@ img {
   text-transform: uppercase;
   font-weight: bold;
 }
+.schulleitung {
+  color: gold;
+}
 .abitur {
   color: yellowgreen;
 }
