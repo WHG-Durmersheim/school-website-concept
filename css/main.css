@@ -128,8 +128,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.grid > div {
-  margin-top: 10px;
+.grid {
+  display: none;
 }
 h2 {
   margin-bottom: 7px;
@@ -173,10 +173,9 @@ img {
 }
 .posts {
   display: block;
-  margin: 0 -10px;
 }
 .posts > div {
-  margin: 10px;
+  margin: 10px 0;
 }
 .posts h1 {
   margin-top: 0;
@@ -267,6 +266,9 @@ img.active {
 	.grid {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
+  }
+  .grid > div {
+    margin-top: 10px;
   }
   .second-nav-link > span {
     display: block;
