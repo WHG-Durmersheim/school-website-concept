@@ -1,6 +1,5 @@
 html, body {
   margin: 0 auto;
-  height: 100%;
 }
 html {
   padding: 16px;
@@ -16,32 +15,36 @@ body {
   font-size: 12px;
   color: lightslategray;
 }
-header {
-  position: relative;
-  height: 131.25px;
+#path {
+  text-align: center;
 }
-.vertical-centered {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-#path, #search {
+#path, #menu, #search {
   display: block;
   margin: 4px 0;
 }
-input[type=text] {
-  width: 241.484px;
+#menu-bar {
+  display: flex;
+}
+#menu, input[type=text] {
   height: 16px;
   padding: 6px 12px;
   color: #555555;
   border: 1px solid #CCC;
   border-radius: 4px;
 }
+#menu {
+  box-sizing: content-box;
+  width: 16px;
+  margin-right: 10px;
+  background: url(../images/menu.svg) no-repeat;
+  background-position: center;
+}
+#search {
+  width: 100%;
+}
 #home {
-  position: absolute;
-  top: 0;
-  right: 0;
   display: block;
+  margin: auto;
   width: 262.5px;
   height: 131.25px;
   background: url(../images/logo.png) no-repeat;
@@ -156,7 +159,6 @@ footer a {
 }
 footer .right {
   float: right;
-  padding: 0 15px;
   text-align: right;
 }
 img {
@@ -263,6 +265,26 @@ img.active {
   to {opacity: 1}
 }
 @media only screen and (min-width: 600px) {
+  header {
+    position: relative;
+    height: 131.25px;
+  }
+  #home {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  #search {
+    width: 241.484px;
+  }
+  .vertical-centered {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #path {
+    text-align: left;
+  }
 	.grid {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
@@ -279,6 +301,9 @@ img.active {
   }
 }
 @media only screen and (min-width: 768px) {
+  #menu {
+    display: none;
+  }
   .nav {
     display: grid;
   }

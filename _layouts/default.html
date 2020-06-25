@@ -15,11 +15,14 @@
   </head>
   <body>
     <header>
+      <a id="home" href="{{ site.baseurl }}/" title="Startseite"></a>
       <div class="vertical-centered">
         <span id="path">Startseite{% if page.title %} / {{ page.title }}{% endif %}</span>
-        <input id="search" type="text" placeholder="Suchbegriff" aria-label="Suchen"></input>
+        <div id="menu-bar">
+          <button id="menu" type="button" aria-label="Menü"></button>
+          <input id="search" type="text" placeholder="Suchbegriff" aria-label="Suchen"></input>
+        </div>
       </div>
-      <a id="home" href="{{ site.baseurl }}/" title="Startseite"></a>
     </header>
     <nav class="stripes nav">
       <h3>Wir am WHG</h3>
@@ -250,7 +253,7 @@
           <img id="emblem" alt="Wappen" src="{{ site.baseurl }}/images//city-emblem.gif">
         </div>
         <br>
-        <span>&copy; Wilhelm-Hausenstein Gymnasium 2017-2020</span>
+        <span>&copy; Wilhelm-Hausenstein Gymnasium 2017-2020</span><br><br>
       </div>
     </footer>
     <script src="{{ site.baseurl }}/js/slideshow.min.js" async></script>
