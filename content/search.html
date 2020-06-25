@@ -1,0 +1,15 @@
+---
+---
+<h1>Ergebnisse f&uuml;r &bdquo;<span id="results-for"></span>&ldquo;</h1>
+<section class="posts">
+  {% for post in site.posts %}
+    <div>
+      <div>{% if post.tag %}<span class="tag {{ post.tag }}">{{ post.tag }}</span>{% else %}<span class="tag">Allgemein</span>{% endif %}</div>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <img src="{{ post.imgURL | default: '$site.baseurl/images/missingimg.png' | replace: '$site.baseurl', site.baseurl }}" alt="Vorschaubild">
+      <p>{{ post.excerpt }}</p>
+      <a href="{{ site.baseurl }}{{ post.url }}">Weiter</a>
+    </div>
+  {% endfor %}
+</section>
+<script src="{{ site.baseurl }}/js/search.min.js" async></script>

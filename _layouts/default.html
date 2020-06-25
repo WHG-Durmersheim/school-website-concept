@@ -20,7 +20,9 @@
         <span id="path">Startseite{% if page.title %} / {{ page.title }}{% endif %}</span>
         <div id="menu-bar">
           <button id="menu" type="button" aria-label="Menü"></button>
-          <input id="search" type="text" placeholder="Suchbegriff" aria-label="Suchen"></input>
+          <form id="search" action="{{ site.baseurl }}/content/search" autocomplete="off" class="hidden">
+            <input type="search" name="q" placeholder="Suchbegriff" aria-label="Suchen"></input>
+          </form>
         </div>
       </div>
     </header>
