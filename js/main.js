@@ -1,6 +1,7 @@
 const slides = document.getElementsByClassName("slide");
 const dots = document.getElementsByClassName("dot");
-var slideIndex, i;
+const titles = document.querySelectorAll(".posts h1");
+var slideIndex, i, headingHeight;
 
 function addSlides(n) {
   showSlides(slideIndex += n);
@@ -30,3 +31,26 @@ function slideLoop() {
 
 setSlide(0);
 setTimeout(slideLoop, 10000);
+
+function adjustHeadingHeights() {
+  if (window.innerWidth > 600) {
+    headingHeight = 0;
+    titles.forEach(function(e) {
+      if (headingHeight < e.offsetHeight) {
+        headingHeight = e.offsetHeight;
+      }
+    });
+    titles.forEach(function(e) {
+      e.parentElement.style.marginTop = 10 + headingHeight - e.offsetHeight + "px";
+    });
+  } else {
+    titles.forEach(function(e) {
+      e.parentElement.style.marginTop = "10px";
+    });
+  }
+}
+
+adjustHeadingHeights();
+window.addEventListener("resize", function(event){
+  adjustHeadingHeights();
+});
