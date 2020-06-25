@@ -1,7 +1,7 @@
 // Declare variables
 const query = getUrlParameter('q');
 const filter = query.toUpperCase();
-const listItems = list.querySelectorAll('#posts > div > h1');
+const listItems = document.querySelectorAll('#posts > div > h1');
 
 // Set results-for
 document.getElementById('results-for').innerHTML = query;
