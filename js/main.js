@@ -1,6 +1,6 @@
 const slides = document.getElementsByClassName("slide");
 const dots = document.getElementsByClassName("dot");
-const titles = document.querySelectorAll(".posts h1");
+const titles = document.querySelectorAll("#posts h1");
 var slideIndex, i, headingHeight;
 
 function addSlides(n) {
@@ -50,7 +50,10 @@ function adjustHeadingHeights() {
   }
 }
 
-adjustHeadingHeights();
-window.addEventListener("resize", function(event){
+if (titles != null) {
   adjustHeadingHeights();
-});
+  window.addEventListener("resize", function(event){
+    adjustHeadingHeights();
+  });
+
+}
