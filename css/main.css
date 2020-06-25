@@ -188,21 +188,21 @@ img {
   height: 66px;
   width: 64px;
 }
-.posts {
+#posts {
   display: block;
   margin: 0 -10px;
 }
-.posts > div {
+#posts > div {
   margin: 10px;
 }
-.posts h1 {
+#posts h1 {
   margin-top: 0;
   font-size: medium;
 }
-.posts h1 > a {
+#posts h1 > a {
   color: inherit;
 }
-.posts img {
+#posts img {
   width: 100%;
 }
 .tag {
@@ -314,7 +314,7 @@ img.active {
   .second-nav-link > span {
     display: block;
   }
-  .posts {
+  #posts {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
   }
@@ -331,7 +331,7 @@ img.active {
 	.grid {
     grid-template-columns: repeat(4, 4fr);
   }
-  .posts {
+  #posts {
     grid-template-columns: repeat(3, 3fr);
   }
 }
