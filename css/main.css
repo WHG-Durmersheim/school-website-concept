@@ -97,7 +97,10 @@ body {
   text-align: center;
   color: inherit;
 }
-.second-nav-link > h2 {
+.second-nav-link > img {
+  height: 40px;
+}
+.second-nav-link > img, .second-nav-link > h2 {
   margin: 1px;
 }
 .second-nav-link > span {
@@ -285,6 +288,9 @@ img.active {
   }
   #path {
     text-align: left;
+  }
+  .second-nav-link > img {
+    height: auto;
   }
 	.grid {
     display: grid;
