@@ -9,7 +9,7 @@ document.getElementById('results-for').innerHTML = query;
 // Loop through all list items, and hide those who don't match the search query
 for (var i = 0; i < listItems.length; i++) {
   if (listItems[i].innerHTML.toUpperCase().indexOf(filter) < 0) {
-    listItems[i].style.display = 'none';
+    listItems[i].parentElement.style.display = 'none';
   }
 }
 
