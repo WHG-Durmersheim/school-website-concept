@@ -1,6 +1,7 @@
 const slides = document.getElementsByClassName("slide");
 const dots = document.getElementsByClassName("dot");
 const titles = document.querySelectorAll("#posts h1");
+const menu = document.querySelector(".stripes.nav")
 var slideIndex, i, headingHeight;
 
 function addSlides(n) {
@@ -56,3 +57,7 @@ if (titles != null) {
     adjustHeadingHeights();
   });
 }
+
+document.getElementById("menu").addEventListener("click", function(){
+  menu.classList.toggle("opened");
+});

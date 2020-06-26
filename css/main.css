@@ -68,6 +68,7 @@ input[type="search"]::-webkit-search-results-decoration {
   grid-template-columns: repeat(6, 6fr);
 }
 .stripes > div > h3 {
+  margin: 16px 0 4px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -99,6 +100,13 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .nav {
   display: none;
+}
+.nav.opened {
+  display: block;
+  position: absolute;
+  width: calc(100% - 16px);
+  background: #fff;
+  z-index: 1;
 }
 #nav1 > h3 {
   color: gold;
@@ -304,6 +312,9 @@ img.active {
   to {opacity: 1}
 }
 @media only screen and (min-width: 600px) {
+  .stripes > div > h3 {
+    text-align: left;
+  }
   header {
     position: relative;
     height: 131.25px;
@@ -343,11 +354,17 @@ img.active {
   }
 }
 @media only screen and (min-width: 992px) {
+  .stripes > div > h3 {
+    text-align: center;
+    margin: 0;
+  }
   #menu {
     display: none;
   }
-  .nav {
+  .nav, .nav.opened {
     display: grid;
+    position: static;
+    width: 100%;
   }
   .dropdown {
     position: relative;
