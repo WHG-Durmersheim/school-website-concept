@@ -67,15 +67,17 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: 0 -4px;
   grid-template-columns: repeat(6, 6fr);
 }
-.stripes h3 {
+.stripes > div > h3 {
   text-align: center;
   text-transform: uppercase;
 }
-.stripes div {
-  height: 15px;
+.stripes > div {
   width: calc(100% - 8px);
   margin: 4px;
   padding: 0;
+}
+.gold, .darkorange, .yellowgreen, .deepskyblue, .cornflowerblue, .lightsteelblue {
+  height: 15px;
 }
 .gold {
   background: gold;
@@ -98,6 +100,24 @@ input[type="search"]::-webkit-search-results-decoration {
 .nav {
   display: none;
 }
+#nav1 > h3 {
+  color: gold;
+}
+#nav2 > h3 {
+  color: darkorange;
+}
+#nav3 > h3 {
+  color: yellowgreen;
+}
+#nav4 > h3 {
+  color: deepskyblue;
+}
+#nav5 > h3 {
+  color: cornflowerblue;
+}
+#nav6 > h3 {
+  color: lightsteelblue;
+}
 .second-nav {
   display: grid;
   grid-template-columns: repeat(5, 5fr);
@@ -113,7 +133,7 @@ input[type="search"]::-webkit-search-results-decoration {
   height: 40px;
 }
 .second-nav-link > img, .second-nav-link > h2 {
-  margin: 1px;
+  margin: 4px;
 }
 .second-nav-link > span {
   display: none;
@@ -161,16 +181,19 @@ h3 {
   font-weight: bold;
   font-size: inherit;
 }
-footer ul {
+footer ul, .dropdown-content ul {
   list-style: none;
   list-style-image: none;
   margin: 0 0 7px 0;
   padding: 0;
 }
-footer a {
+footer a, .dropdown-content a {
   display: block;
   padding: 0px 4px;
   color: inherit;
+}
+.dropdown-content a {
+  padding: 4px;
 }
 footer .right {
   float: right;
@@ -319,15 +342,30 @@ img.active {
     grid-template-columns: repeat(2, 2fr);
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   #menu {
     display: none;
   }
   .nav {
     display: grid;
   }
-}
-@media only screen and (min-width: 992px) {
+  .dropdown {
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    border-radius: 4px;
+    width: 100%;
+    z-index: 1;
+  }
+  .dropdown:hover > .dropdown-content {
+    display: block;
+  }
 	.grid {
     grid-template-columns: repeat(4, 4fr);
   }

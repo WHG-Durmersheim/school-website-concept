@@ -55,5 +55,4 @@ if (titles != null) {
   window.addEventListener("resize", function(event){
     adjustHeadingHeights();
   });
-
 }
