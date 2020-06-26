@@ -364,7 +364,7 @@ img.active {
   .nav, .nav.opened {
     display: grid;
     position: static;
-    width: 100%;
+    width: auto;
   }
   .dropdown {
     position: relative;
