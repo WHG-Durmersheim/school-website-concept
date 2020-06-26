@@ -79,6 +79,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .gold, .darkorange, .yellowgreen, .deepskyblue, .cornflowerblue, .lightsteelblue {
   height: 15px;
+  border-radius: 4px;
 }
 .gold {
   background: gold;
@@ -210,6 +211,7 @@ footer .right {
 img {
   max-width: 100%;
   vertical-align: middle;
+  border-radius: 4px;
 }
 .columns > * {
   display: inline-block;
@@ -303,10 +305,10 @@ img.active {
 }
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: .5s;
 }
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .5}
   to {opacity: 1}
 }
 @media only screen and (min-width: 600px) {
