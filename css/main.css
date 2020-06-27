@@ -270,6 +270,7 @@ p {
   width: 100%;
   bottom: 10px;
   cursor: default;
+  user-select: none;
 }
 .dot {
   height: 10px;
@@ -369,6 +370,7 @@ img.active {
   }
   .dropdown {
     position: relative;
+    cursor: pointer;
   }
   .dropdown-content {
     display: none;

@@ -208,7 +208,7 @@
       <div class="cornflowerblue"></div>
       <div class="lightsteelblue"></div>
     </div>
-    <div id="slideshow-container">
+    <section id="slideshow-container" aria-hidden="true">
       <img class="slide active" alt="Theater" src="{{ site.baseurl }}/images/carousel-1.jpg">
       <img class="slide" alt="Big Band" src="{{ site.baseurl }}/images/carousel-2.jpg">
       <img class="slide" alt="Erklärvideoauswertung" src="{{ site.baseurl }}/images/carousel-3.jpg">
@@ -227,7 +227,7 @@
         <span class="dot" onclick="setSlide(5)"></span>
         <span class="dot" onclick="setSlide(6)"></span>
       </div>
-    </div>
+    </section>
     <div class="stripes">
       <div class="gold"></div>
       <div class="darkorange"></div>
@@ -236,7 +236,7 @@
       <div class="cornflowerblue"></div>
       <div class="lightsteelblue"></div>
     </div>
-    <nav class="second-nav">
+    <nav class="second-nav" aria-label="Schnellübersicht">
       <a class="second-nav-link" href="">
         <img alt="Ranzen" src="{{ site.baseurl }}/images/ranzen.png">
         <h2>Schulleben</h2>
@@ -266,9 +266,9 @@
     <hr>
     <main>
 {{ content }}
-    </main>
     <hr>
     <a class="text-right" href="#">Nach oben</a>
+    </main>
     <section class="stripes">
       <div class="gold"></div>
       <div class="darkorange"></div>
