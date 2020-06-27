@@ -45,3 +45,30 @@ The search bar does not follow the grid layout, the articles on the main page ar
 To improve the website it is important to minify `JavaScript` and `CSS` files and reduce the server's response time.
 With a simpler `DOM` and without unnecessary libraries like `Bootstrap` and `jQuery` the website will load faster.
 Furthermore, modern technologies like the `Progressive Web App` specification can make the website significantly faster and even provide an offline version.
+
+### Current Project Status and Comparisons
+
+*The left picture is always of the rewritten one.*
+
+#### Automated Testing
+
+![Status](https://img.shields.io/badge/Performance-100-success?style=flat-square)
+![Status](https://img.shields.io/badge/Accessibility-97-success?style=flat-square)
+![Status](https://img.shields.io/badge/Best%20Practices-93-success?style=flat-square)
+![Status](https://img.shields.io/badge/SEO-100-success?style=flat-square)
+
+#### Mobile
+
+![Preview](https://raw.githubusercontent.com/WHG-Durmersheim/school-website-concept/master/_README/mobile.jpg)
+
+#### Tablet
+
+![Preview](https://raw.githubusercontent.com/WHG-Durmersheim/school-website-concept/master/_README/tablet.jpg)
+
+#### Desktop
+
+![Preview](https://raw.githubusercontent.com/WHG-Durmersheim/school-website-concept/master/_README/desktop.jpg)
+
+#### Printer
+
+When the new site gets printed it will only print the main content instead of the whole page.
