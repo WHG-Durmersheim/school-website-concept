@@ -45,6 +45,7 @@ The search bar does not follow the grid layout, the articles on the main page ar
 To improve the website it is important to minify `JavaScript` and `CSS` files and reduce the server's response time.
 With a simpler `DOM` and without unnecessary libraries like `Bootstrap` and `jQuery` the website will load faster.
 Furthermore, modern technologies like the `Progressive Web App` specification can make the website significantly faster and even provide an offline version.
+Designwise, rounded corners and a consistent grid layout can greatly improve the website's look and make it appear more natural.
 
 ## Current Project Status And Comparisons
 
