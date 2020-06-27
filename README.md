@@ -48,7 +48,7 @@ Furthermore, modern technologies like the `Progressive Web App` specification ca
 
 ### Current Project Status and Comparisons
 
-*The left picture is always of the rewritten one.*
+*The left/top picture is always of the rewritten site.*
 
 #### Automated Testing
 
@@ -59,15 +59,15 @@ Furthermore, modern technologies like the `Progressive Web App` specification ca
 
 #### Mobile
 
-![Preview](https://raw.githubusercontent.com/WHG-Durmersheim/school-website-concept/master/_README/mobile.jpg)
+![Preview](https://raw.githubusercontent.com/WHG-Durmersheim/school-website-concept/master/_README/mobile.png)
 
 #### Tablet
 
-![Preview](https://raw.githubusercontent.com/WHG-Durmersheim/school-website-concept/master/_README/tablet.jpg)
+![Preview](https://raw.githubusercontent.com/WHG-Durmersheim/school-website-concept/master/_README/tablet.png)
 
 #### Desktop
 
-![Preview](https://raw.githubusercontent.com/WHG-Durmersheim/school-website-concept/master/_README/desktop.jpg)
+![Preview](https://raw.githubusercontent.com/WHG-Durmersheim/school-website-concept/master/_README/desktop.png)
 
 #### Printer
 
