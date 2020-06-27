@@ -408,3 +408,8 @@ img.active {
     grid-template-columns: repeat(6, 6fr);
   }
 }
+@media only print {
+  header, footer, .stripes, #slideshow-container, .second-nav {
+    display: none;
+  }
+}
