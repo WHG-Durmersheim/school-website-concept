@@ -105,7 +105,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .nav.opened {
   display: block;
   position: absolute;
-  width: calc(100% - 16px);
+  left: 16px;
+  right: 16px;
   background: #fff;
   z-index: 1;
 }
@@ -144,7 +145,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .second-nav-link > * {
   margin: 3px;
 }
-.second-nav-link > span {
+.second-nav-link > h2, .second-nav-link > span {
   display: none;
 }
 .text-center {
@@ -313,6 +314,12 @@ img.active {
   from {opacity: .5}
   to {opacity: 1}
 }
+@media only screen and (min-width: 360px) {
+  .second-nav-link > h2 {
+    display: block;
+    text-transform: none;
+  }
+}
 @media only screen and (min-width: 600px) {
   .stripes > div > h3 {
     text-align: left;
@@ -340,15 +347,18 @@ img.active {
   .second-nav-link > img {
     height: auto;
   }
+  .second-nav-link > h2 {
+    text-transform: uppercase;
+  }
+  .second-nav-link > span {
+    display: block;
+  }
 	.grid {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
   }
   .grid > div {
     margin-top: 10px;
-  }
-  .second-nav-link > span {
-    display: block;
   }
   #posts {
     display: grid;
