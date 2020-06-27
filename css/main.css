@@ -110,22 +110,22 @@ input[type="search"]::-webkit-search-results-decoration {
   background: #fff;
   z-index: 1;
 }
-#nav1 > h3 {
+#nav1 h3 {
   color: gold;
 }
-#nav2 > h3 {
+#nav2 h3 {
   color: darkorange;
 }
-#nav3 > h3 {
+#nav3 h3 {
   color: yellowgreen;
 }
-#nav4 > h3 {
+#nav4 h3 {
   color: deepskyblue;
 }
-#nav5 > h3 {
+#nav5 h3 {
   color: cornflowerblue;
 }
-#nav6 > h3 {
+#nav6 h3 {
   color: lightsteelblue;
 }
 .second-nav {
@@ -394,7 +394,11 @@ img.active {
     z-index: 1;
   }
   .dropdown:hover > .dropdown-content {
-    display: block;
+    display: grid;
+  }
+  #nav1, #nav2, #nav3, #nav4, #nav5 {
+    width: calc(200% + 8px);
+    grid-template-columns: repeat(2, 2fr);
   }
 	.grid {
     grid-template-columns: repeat(4, 4fr);
