@@ -141,8 +141,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .second-nav-link > img {
   height: 40px;
 }
-.second-nav-link > img, .second-nav-link > h2 {
-  margin: 4px;
+.second-nav-link > * {
+  margin: 3px;
 }
 .second-nav-link > span {
   display: none;
@@ -164,6 +164,7 @@ input[type="search"]::-webkit-search-results-decoration {
 hr {
   height: 1px;
   background: #ccc;
+  margin: 4px 0;
   border: 0;
 }
 footer {
@@ -255,6 +256,7 @@ p {
   position: relative;
   margin: 4px 0;
   background: black;
+  border-radius: 4px;
 }
 .slide {
   display: none;
