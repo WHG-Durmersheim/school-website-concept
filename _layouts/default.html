@@ -208,18 +208,17 @@
       <div class="cornflowerblue"></div>
       <div class="lightsteelblue"></div>
     </div>
-
-    <div class="slideshow-container">
-      <img class="slide fade active" alt="Theater" src="{{ site.baseurl }}/images/carousel-1.jpg">
-      <img class="slide fade" alt="Big Band" src="{{ site.baseurl }}/images/carousel-2.jpg">
-      <img class="slide fade" alt="Erklärvideoauswertung" src="{{ site.baseurl }}/images/carousel-3.jpg">
-      <img class="slide fade" alt="Wilhelm Hausenstein Büste" src="{{ site.baseurl }}/images/carousel-4.jpg">
-      <img class="slide fade" alt="Wilhelm-Hausenstein Gymnasium" src="{{ site.baseurl }}/images/hero-image.jpg">
-      <img class="slide fade" alt="WHG Spendenlauf" src="{{ site.baseurl }}/images/carousel-6.jpg">
-      <img class="slide fade" alt="Mischpult" src="{{ site.baseurl }}/images/carousel-7.jpg">
+    <div id="slideshow-container">
+      <img class="slide active" alt="Theater" src="{{ site.baseurl }}/images/carousel-1.jpg">
+      <img class="slide" alt="Big Band" src="{{ site.baseurl }}/images/carousel-2.jpg">
+      <img class="slide" alt="Erklärvideoauswertung" src="{{ site.baseurl }}/images/carousel-3.jpg">
+      <img class="slide" alt="Wilhelm Hausenstein Büste" src="{{ site.baseurl }}/images/carousel-4.jpg">
+      <img class="slide" alt="Wilhelm-Hausenstein Gymnasium" src="{{ site.baseurl }}/images/hero-image.jpg">
+      <img class="slide" alt="WHG Spendenlauf" src="{{ site.baseurl }}/images/carousel-6.jpg">
+      <img class="slide" alt="Mischpult" src="{{ site.baseurl }}/images/carousel-7.jpg">
       <a class="prev" onclick="addSlides(-1)">&#10094;</a>
       <a class="next" onclick="addSlides(1)">&#10095;</a>
-      <div class="dot-container">
+      <div id="dot-container">
         <span class="dot" onclick="setSlide(0)"></span>
         <span class="dot" onclick="setSlide(1)"></span>
         <span class="dot" onclick="setSlide(2)"></span>
@@ -229,7 +228,6 @@
         <span class="dot" onclick="setSlide(6)"></span>
       </div>
     </div>
-
     <div class="stripes">
       <div class="gold"></div>
       <div class="darkorange"></div>
