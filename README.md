@@ -73,3 +73,14 @@ Designwise, rounded corners and a consistent grid layout can greatly improve the
 ### Printer
 
 When the new site gets printed it will only print the main content instead of the whole page.
+
+### Major Changes
+
+- Simpler `DOM`
+- Removed third party libraries
+- Consistent grid layout
+- Automatical alignment of preview images
+- Social media previews
+- Description meta tag
+- Optimized for mobile devices
+- Partial adoption of material design guidelines
